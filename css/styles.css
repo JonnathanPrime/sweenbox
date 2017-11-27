@@ -1,0 +1,355 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/***Reset Custom***/
+html { /*Put font-size to 10px, easier for playing with em/rem*/
+  font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+}
+body {
+	font-size: 1.6rem; /*=16px*/
+	font-family: 'Poppins', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+/***Généralités***/
+@font-face {
+  font-family: 'Avantgarde';
+  src: url('../font/avantm.ttf')  format('truetype');
+}
+h2 {
+	font-size: 5rem;
+	display: inline-block;
+	margin-bottom: 10rem;
+	background-color: #28c9ff;
+	position: relative;
+	color: #ffffff;
+	padding: 1rem 5rem;
+}
+h2::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 33%;
+	height: 50%;
+	right: 0;
+	bottom: -50%;
+	background-color: #4f4f4f;
+}
+/***Header***/
+nav {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+	-ms-align-items: center;
+	align-items: center;
+
+	height: 10rem;
+	color: #ffffff;
+	font-size: 2rem;
+
+	background-color: #444444; /* fallback color if gradients are not supported */
+    background-image: -webkit-linear-gradient(top, #000000, #444444); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+    background-image:    -moz-linear-gradient(top, #000000, #444444); /* For Firefox (3.6 to 15) */
+    background-image:      -o-linear-gradient(top, #000000, #444444); /* For old Opera (11.1 to 12.0) */ 
+    background-image:         linear-gradient(to bottom, #000000, #444444); /* Standard syntax; must be last */
+
+
+}
+nav li {
+	display: inline;
+	margin-right: 2rem;
+}
+header > div {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-around;
+
+	color: #ffffff;
+
+	background-color: #00b6c2; /* fallback color if gradients are not supported */
+    background-image: -webkit-linear-gradient(top, #ff982b, #ff5e42); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+    background-image:    -moz-linear-gradient(top, #ff982b, #ff5e42); /* For Firefox (3.6 to 15) */
+    background-image:      -o-linear-gradient(top, #ff982b, #ff5e42); /* For old Opera (11.1 to 12.0) */ 
+    background-image:         linear-gradient(to bottom left, #ff982b, #ff5e42); /* Standard syntax; must be last */
+}
+header > div > div:first-child {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+header h1 {
+	margin: 10rem 0 2.5rem;
+	text-transform: uppercase;
+	font-size: 10rem;
+}
+header .techno-icons {
+	color: #fff;
+	font-size: 7rem;
+	margin: 10rem 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+.techno-icons > div {
+	margin-bottom: 2rem;
+}
+/***SECTIONS***/
+section {
+	padding-top: 10rem;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-around;
+	-ms-align-items: center;
+	align-items: center;
+}
+section p {
+	text-align: center;
+	width: 33%;
+	color: #797979;
+	margin-bottom: 5rem;
+}
+.line {
+	width: 70%;
+	height: 2px;
+	position: relative;
+	background-color: #e0647e;
+}
+.line::before, .line::after {
+	content: "";
+	position: absolute;
+	top: -1rem;
+	background-color: #e0647e;
+	height: 2rem;
+	width: 2rem;
+	border-radius: 50%;
+}
+.line::before {
+	left:0;
+}
+.line::after {
+	right:0;
+}
+
+.icons {
+	margin-top: 5rem;
+	margin-bottom: 10rem;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	-ms-align-items: center;
+	align-items: center;
+	width: 50%;
+	color: #eb6a64;
+}
+.icons div {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+}
+.icons span {
+	display: block;
+	width: 5rem;
+	height: 5rem;
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 1rem;
+}
+.icons .app span {
+	background-image: url(../img/app.svg);
+}
+.icons .site span {
+	background-image: url(../img/site.svg);
+}
+.icons .blog span {
+	background-image: url(../img/blog.svg);
+}
+.icons .design span {
+	background-image: url(../img/design.svg);
+}
+
+.contact {
+	background-color: #00b6c2; /* fallback color if gradients are not supported */
+    background-image: -webkit-linear-gradient(bottom, #c6356e, #ff5e42); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+    background-image:    -moz-linear-gradient(bottom, #c6356e, #ff5e42); /* For Firefox (3.6 to 15) */
+    background-image:      -o-linear-gradient(bottom, #c6356e, #ff5e42); /* For old Opera (11.1 to 12.0) */ 
+    background-image:         linear-gradient(to top right, #c6356e, #ff5e42); /* Standard syntax; must be last */
+}
+.contact form {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	width: 50%;
+	margin-bottom: 10rem;
+}
+.contact form .inp-grp-top {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.contact form .inp-grp-top input {
+	width: 50%;
+}
+.contact .area-mess {
+	height: 10rem;
+}
+.contact input, textarea {
+	padding: 1rem;
+}
+
+/******************
+
+Footer
+
+******************/
+footer {
+	height: 10rem;
+	color: #ffffff;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	-ms-align-items: center;
+	align-items: center;
+	background-color: #444444; /* fallback color if gradients are not supported */
+    background-image: -webkit-linear-gradient(top, #444444, #000000); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+    background-image:    -moz-linear-gradient(top, #444444, #000000); /* For Firefox (3.6 to 15) */
+    background-image:      -o-linear-gradient(top, #444444, #000000); /* For old Opera (11.1 to 12.0) */ 
+    background-image:         linear-gradient(to bottom, #444444, #000000); /* Standard syntax; must be last */
+}
+footer > div > p {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+}
+footer span {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+/****
+apache, debian, git, react, jquery, 
+npm, php, ubuntu, wp, html, 
+css, mysql, svg, bs, laravel,
+symfony, js, node, sass, python,
+***/

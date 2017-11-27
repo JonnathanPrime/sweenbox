@@ -1,85 +1,95 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-	<meta charset="utf-8"/>
-	<title>Sweenbox</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="js/javascript.js"></script>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/font-mfizz.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+	<title>Sween Box - Accueil</title>
 </head>
-<body onload="init();">
-	<main>
-		<header>
-        <canvas id="title" width="1000" height="100">
- 		</canvas>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="#service">Qui sommes-nous ?</a></li>
+			</ul>
+		</nav>
+		<div>
+			<div>
+				<h1>Sween Box</h1>
+				<p>Une agence à votre écoute.</p>
+			</div>
+			<div class="techno-icons">
+				<div>
+					<i class="icon-html5-alt"></i>
+					<i class="icon-css3-alt"></i>
+					<i class="icon-sass"></i>
+					<i class="icon-javascript-alt"></i>
+					<i class="icon-php-alt"></i>
 
-		</header>
-		<section class="service" >
-			<h1>Services</h1>
-			<article>
-				<div class="circle">
-				<img src="">
 				</div>
-				<h2>Conseil & Formation </h2>
-				<p>Paramétrage, Formation</p>
-				<p>Assistance, Communication</p>
-			</article>
-			<article>
-				<div class="circle">
-				<img src="">
+				<div>
+					<i class="icon-wordpress"></i>
+					<i class="icon-laravel"></i>
+					<i class="icon-symfony"></i>
+					<i class="icon-bootstrap"></i>
+					<i class="icon-reactjs"></i>
 				</div>
-				<h2>Logiciel CE </h2>
-				<p>Gestionn .....</p>
-				<p>Assistance....</p>
-				<p>dsds...</p>
-			</article>
-			<article>
-				<div class="circle">
-				<img src="">
+				<div>
+					<i class="icon-git"></i>
+					<i class="icon-ubuntu"></i>
+					<i class="icon-mysql-alt"></i>
+					<i class="icon-nodejs"></i>
+					<i class="icon-npm"></i>
 				</div>
-				<h2>Formation ...</h2>
-				<p> Formation</p>
-				<p>sds Communication</p>
-			</article>
-			<article>
-				<div class="circle">
-				<img src="">
+				<div>
+					<i class="icon-jquery"></i>
+					<i class="icon-debian"></i>
+					<i class="icon-python"></i>
+					<i class="icon-apache"></i>
+					<i class="icon-svg"></i>
 				</div>
-				<h2>Conseil & Formation </h2>
-				<p>Paramétrage, Formation</p>
-				<p>Assistance, Communication</p>
-			</article>
-			<article>
-				<div class="circle">
-				<img src="">
-				</div>
-				<h2>Conseil </h2>
-				<p>Paramétrage</p>
-				<p>Communication</p>
-			</article>
-		</section>
-		<section class="contact">
-			<p>lorempLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<hr>
-		</section>
-	</main>
-	<aside>
-		<div>
-			<h3>Adresse</h3>
-			<p>12 villa dsfdsf</p>
+			</div>
 		</div>
-		<div>icons</div>
-		<div>
-			<h3>Mail</h3>
-			<p>jonnasdfs@dsfsdf.gr</p>
+	</header>
+	<section class="services" id="service">
+		<h2>Services</h2>
+		<p>Nous sommes Sweenbox, une agence Web composée de quatre développeurs et d'une graphiste.<br>Nous vous proposons de réaliser vos projets (front-end et back-end), et/ou de résoudre les problèmes que vous rencontrez dans la création de vos projets web.</p>
+		<div class="line"></div>
+		<div class="icons">
+			<div class="app"><span></span>Web App</div>
+			<div class="site"><span></span>Site Internet</div>
+			<div class="blog"><span></span>Blog</div>
+			<div class="design"><span></span>Design Graphique</div>
 		</div>
-		<div>	
-			<h3>Téléphone</h3>
-			<p>06 45 64 84 32</p>
+	</section>
+	<section class="contact" id="contact">
+		<h2>Contact</h2>
+		<form action="#" method="POST">
+			<div class="inp-grp-top">
+				<input class="inp-name" type="text" placeholder="Votre nom">
+				<input class="inp-mail" type="email" placeholder="Votre adresse mail">
+			</div>
+			<textarea class="area-mess" placeholder="Votre message..."></textarea>
+		</form>
+	</section>
+	<footer>
+
+		<div class="mail">
+			<p><span>Mail</span>
+				contact@sweenbox.fr</p>
 		</div>
-	</aside>	
+		<ul>
+			<li><a class="facebook" href="#" title="Lien vers notre page Facebook"></a></li>
+			<li><a class="twitter" href="#" title="Lien vers notre compte Twitter"></a></li>
+			<li><a class="google" href="#" title="Lien vers notre profil Google Plus"></a></li>
+		</ul>
+	
+		<div class="tel">
+			<p><span>Téléphone</span>
+			06 13 08 89 67</p>
+		</div>
+	</footer>
 </body>
 </html>
